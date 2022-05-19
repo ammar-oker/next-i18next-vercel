@@ -22,7 +22,7 @@ const Homepage = ({ t }) => {
               {t('change-locale')}
             </button>
           </Link>
-          <Link href='/second-page'>
+          <Link href={router.locale === 'en' ? '/second-page' : '/zweite-seite'}>
             <button
               type='button'
             >
